@@ -2,95 +2,145 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Subkeep | サブスク管理をもっとスマートに</title>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#4caf50" />
 </head>
 <body>
 
   <header>
-  <img src="subkeep-logo.png" alt="Subkeep ロゴ" class="logo" />
-  <p>サブスクを「見える化」して、あなたの支出をスマートに管理。</p>
-</header>
+    <img src="subkeep-logo.png" alt="Subkeep ロゴ" class="logo" />
+    <p>サブスクを「見える化」して、あなたの支出をスマートに管理。</p>
+  </header>
 
-  <section>
-    <h2>Subkeepとは？</h2>
-    <p>
-      Subkeepは、費用・手間・困難さなどあらゆるサブスクリプションを一括管理できるアプリです。登録するだけで、支払いや支日や合計金額、契約の結果がひと目でわかります。
-    </p>
-  </section>
+  <main>
+    <section>
+      <h2>Subkeepとは？</h2>
+      <p>
+        Subkeepは、費用・手間・困難さなどあらゆるサブスクリプションを一括管理できるアプリです。
+        登録するだけで、支払いや支日や合計金額、契約の結果がひと目でわかります。
+      </p>
+    </section>
 
-  <section>
-    <h2>主な機能</h2>
-    <div class="features">
-      <div class="feature-box">
-        <h3>📋 サブスク登録</h3>
-        <p>サービス名・金額・支払日・契約・メモなどを自由に登録できます。</p>
+    <section>
+      <h2>主な機能</h2>
+      <div class="features">
+        <div class="feature-box visible">
+          <h3>📋 サブスク登録</h3>
+          <p>サービス名・金額・支払日・契約・メモなどを自由に登録できます。</p>
+        </div>
+        <div class="feature-box visible">
+          <h3>🔔 支払い予定通知</h3>
+          <p>支払い日の3日前に通知。うっかり払い忘れを防ぎます。</p>
+        </div>
+        <div class="feature-box visible">
+          <h3>📊 支出グラフ</h3>
+          <p>月単位の支出をグラフで表示。前からの結果が見られます。</p>
+        </div>
+        <div class="feature-box visible">
+          <h3>📁 契約管理システム</h3>
+          <p>契約書や関連書類などの保存で支出を確認。楽しいが続きます。</p>
+        </div>
       </div>
-      <div class="feature-box">
-        <h3>🔔 支払い予定通知</h3>
-        <p>支払い日の3日前に通知。うっかり払い忘れを防ぎます。</p>
-      </div>
-      <div class="feature-box">
-        <h3>📊 支出グラフ</h3>
-        <p>月単位の支出をグラフで表示。前からの結果が見られます。</p>
-      </div>
-      <div class="feature-box">
-        <h3>📁 契約管理システム</h3>
-        <p>契約書や関連書類などの保存で支出を確認。楽しいが続きます。</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <h2>導入事例</h2>
-    <ul>
-      <li><strong>学生：</strong>音楽・動画・学習系サブスクをまとめて管理。支出を抑えて勉強に集中！</li>
-      <li><strong>社会人：</strong>仕事用ツールや趣味の契約を見直して、月額5,000円の節約に成功！</li>
-      <li><strong>家族：</strong>家族全員の契約を一括管理。誰が何を使ってるかがすぐわかる！</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Subkeepのこだわり設計</h2>
+      <ul>
+        <li><strong>🎯 節約をゲーム化：</strong> 節約額に応じてバッジや実績がもらえる仕組みで、楽しみながら支出を見直せます。</li>
+        <li><strong>🔒 契約情報の暗号化保存：</strong> 大切な契約情報はすべて暗号化して保存。セキュリティも万全です。</li>
+        <li><strong>📅 カレンダー連携：</strong> Googleカレンダーと同期して、支払い日や契約更新日を見逃しません。</li>
+        <li><strong>🧠 AIによる契約見直し提案：</strong> 利用頻度や支出傾向をもとに、不要な契約を提案してくれる機能（今後実装予定）</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>開発者からのメッセージ</h2>
-    <p>
-      「サブスクは便利だけど、気づいたら支出が増えてる。そんな悩みを解決したくてSubkeepを作りました。
-      節約を“楽しく”できるように、実績システムや通知機能もこだわって設計しています。無料ですので、ぜひ使ってください！」
-    </p>
-    <p style="text-align: right;">— Subkeep開発チーム</p>
-  </section>
+    <section>
+      <h2>なぜSubkeepを作ったのか</h2>
+      <p>
+        サブスクリプションは便利で、生活を豊かにしてくれる存在です。  
+        でも、気づけば契約が増えすぎて、何にいくら払っているのか分からなくなる。  
+        「使ってないのに払い続けてる」「解約し忘れて損してる」そんな声をたくさん聞きました。
+      </p>
+      <p>
+        Subkeepは、そうした“サブスク迷子”をなくすために生まれました。  
+        契約を見える化し、支出を整理し、通知で忘れず、節約をゲーム感覚で楽しめる。  
+        ただの管理ツールではなく、「使ってよかった」と思える体験を届けたい。  
+        それが私たちの原点です。
+      </p>
+    </section>
 
-  <section>
-    <h2>他サービスとの違い</h2>
-    <table class="comparison-table">
-      <tr>
-        <th>機能</th>
-        <th>Subkeep</th>
-        <th>一般的な管理アプリ</th>
-      </tr>
-      <tr>
-        <td>サブスク登録の柔軟性</td>
-        <td>◎ メモ・タグ・契約情報もOK</td>
-        <td>△ 金額と日付のみ</td>
-      </tr>
-      <tr>
-        <td>通知機能</td>
-        <td>◎ 支払い7日前から通知</td>
-        <td>× 通知なし</td>
-      </tr>
-      <tr>
-        <td>実績システム</td>
-        <td>◎ 節約をゲーム感覚で</td>
-        <td>× なし</td>
-      </tr>
-    </table>
-  </section>
+    <section>
+      <h2>Subkeepが目指す未来</h2>
+      <p>
+        私たちは、サブスク管理を「面倒な作業」から「生活の質を高める習慣」へと変えていきたい。  
+        Subkeepは、契約の“健康診断”ができるアプリを目指しています。
+      </p>
+      <ul>
+        <li><strong>契約の見える化：</strong> 何を使っていて、何が不要かを一目で判断できる</li>
+        <li><strong>支出の最適化：</strong> 本当に必要なサービスだけを選び、無駄を減らす</li>
+        <li><strong>共有文化の創出：</strong> 家族やチームで契約を共有し、みんなで管理する</li>
+        <li><strong>サブスクのライフサイクル管理：</strong> 契約 → 利用 →見直し →解約までをサポート</li>
+      </ul>
+      <p>
+        Subkeepは、ただのアプリではなく、サブスクとの付き合い方そのものを変える存在でありたい。  
+        そんな未来を、あなたと一緒に作っていきます。
+      </p>
+    </section>
 
-  <footer>
-    &copy; 2025 Subkeep. All rights reserved.
-  </footer>
+    <section>
+      <h2>導入事例</h2>
+      <ul>
+        <li><strong>学生：</strong>音楽・動画・学習系サブスクをまとめて管理。支出を抑えて勉強に集中！</li>
+        <li><strong>社会人：</strong>仕事用ツールや趣味の契約を見直して、月額5,000円の節約に成功！</li>
+        <li><strong>家族：</strong>家族全員の契約を一括管理。誰が何を使ってるかがすぐわかる！</li>
+      </ul>
+    </section>
 
-  <script src="script.js"></script>
-</body>
-</html>
+    <section>
+      <h2>開発者からのメッセージ</h2>
+      <p>
+        「サブスクって便利だけど、気づいたら支出が増えてる。そんな悩みを解決したくてSubkeepを作りました。
+        節約を“楽しく”できるように、実績システムや通知機能もこだわって設計しています。ぜひ使ってみてください！」
+      </p>
+      <p>— Subkeep開発チーム</p>
+    </section>
+
+    <section>
+      <h2>他サービスとの違い</h2>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>機能</th>
+            <th>Subkeep</th>
+            <th>一般的な管理アプリ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>サブスク登録の柔軟性</td>
+            <td>◎ メモ・タグ・契約情報もOK</td>
+            <td>△ 金額と日付のみ</td>
+          </tr>
+          <tr>
+            <td>通知機能</td>
+            <td>◎ 支払い3日前に通知</td>
+            <td>× 通知なし</td>
+          </tr>
+          <tr>
+            <td>実績システム</td>
+            <td>◎ 節約をゲーム感覚で</td>
+            <td>× なし</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>SubkeepのWebアプリ</h2>
+      <p>
+        SubkeepのWebアプリはこちらから！  
+        <a href="https://mizu3427.github.io/subkeep/" target="_blank">
+          https://m
