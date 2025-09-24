@@ -10,7 +10,7 @@ body {
 
 /* ヘッダー */
 header {
-  background-color: #1e1e1e; /* 背景と統一 */
+  background-color: #1e1e1e;
   padding: 60px 20px 40px;
   text-align: center;
   border-bottom: 2px solid #2a2a2a;
@@ -50,11 +50,19 @@ section ul {
 }
 section ul li {
   margin-bottom: 10px;
+  position: relative;
+  padding-left: 24px;
 }
 section ul li::before {
   content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
   color: #4caf50;
-  margin-right: 8px;
+  font-weight: bold;
+}
+section ul li strong {
+  color: #aaffaa;
 }
 
 /* 機能紹介ボックス */
@@ -86,19 +94,6 @@ section ul li::before {
   color: #ccc;
 }
 
-/* 導入事例 */
-section ul li strong {
-  color: #aaffaa;
-}
-
-/* 開発者メッセージの署名 */
-section p:last-child {
-  font-size: 14px;
-  color: #aaa;
-  margin-top: -10px;
-  text-align: right;
-}
-
 /* 比較表 */
 .comparison-table {
   width: 100%;
@@ -119,6 +114,36 @@ section p:last-child {
 .comparison-table td {
   background-color: #2a2a2a;
   color: #ccc;
+}
+
+/* スクロール演出 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* リンク */
+section a {
+  font-weight: bold;
+  color: #aaffaa;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+section a:hover {
+  color: #66ffcc;
+}
+
+/* 開発者メッセージの署名 */
+section p:last-child {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: -10px;
+  text-align: right;
 }
 
 /* フッター */
